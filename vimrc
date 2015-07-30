@@ -44,13 +44,21 @@ NeoBundleCheck
 
 let mapleader="\<Space>"
 
+" key mappings
 nmap <Leader>m <Plug>(quickhl-manual-this)
 xmap <Leader>m <Plug>(quickhl-manual-this)
 nmap <Leader>M <Plug>(quickhl-manual-reset)
 xmap <Leader>M <Plug>(quickhl-manual-reset)
-
+nmap <Leader>w :w<CR>
+nmap <Leader>u :Unite
+nmap <Leader>a :Ag<CR>
+nmap <Leader>A :Ag
 nmap <Leader>e :TagbarToggle<CR>
 nmap <Leader>s :source ~/.vimrc<CR>
+
+nmap n nzz
+nmap N Nzz
+
 
 set tabstop=2 shiftwidth=2 sts=2 expandtab
 set autoindent smartindent
