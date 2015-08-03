@@ -24,7 +24,14 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'majutsushi/tagbar'
 " NeoBundle 'thinca/vim-ref'
 
+NeoBundle 'kchmck/vim-coffee-script'
+
 NeoBundle 'rking/ag.vim'
+
+let bundlefile=$HOME . '/.vim/vimrc-' . hostname() . '-bundle'
+if filereadable(bundlefile)
+  exe 'source ' . bundlefile
+endif
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
@@ -70,3 +77,8 @@ let g:solarized_termcolors=256
 syntax enable
 set background=light
 colorscheme solarized
+
+let hostfile=$HOME. '/.vim/vimrc-' . hostname()
+if filereadable(hostfile)
+  exe 'source ' . hostfile
+endif
