@@ -30,6 +30,8 @@ NeoBundle 'leafgarland/typescript-vim'
 
 NeoBundle 'tpope/vim-surround'
 
+NeoBundle 'mattn/emmet-vim'
+
 NeoBundle 'rking/ag.vim'
 
 let bundlefile=$HOME . '/.vim/vimrc-' . hostname() . '-bundle'
