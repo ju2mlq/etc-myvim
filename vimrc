@@ -26,6 +26,7 @@ NeoBundle 'majutsushi/tagbar'
 
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mtscout6/vim-cjsx'
+NeoBundle 'leafgarland/typescript-vim'
 
 NeoBundle 'tpope/vim-surround'
 
