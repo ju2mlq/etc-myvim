@@ -1,1 +1,33 @@
 " host based setting file for pro.local
+"" QFixHowm Setting
+let QFixHowm_Key = 'g'
+let QFixHowm_SwitchListActionLock = ['{ }', '{-}', '{+}', '{x}']
+let howm_dir             = '~/Dropbox/howm'
+let howm_filename        = '%Y/%m/%Y-%m-%d-000000.md'
+let howm_fileencoding    = 'utf-8'
+let howm_fileformat      = 'unix'
+let mygrepprg = 'grep'
+let MyGrep_ShellEncoding = 'utf-8'
+let QFixHowm_FileType = 'markdown'
+let g:vim_markdown_folding_disabled=1
+let QFixHowm_Title = '#'
+
+let g:QFixHowm_FoldingChapterTitle = 1
+let g:QFixHowm_FoldingPattern = '^=[^=]'
+let g:QFixHowm_DefaultSearchWord=0
+
+" my custom setting
+let g:mm_macro_options = 'zz'
+let g:qfixmemo_prescript='~/.vim/bundle/qfixhowm/autoload/mmaction.vim'
+if exists('g:qfixmemo_prescript')
+  exe 'source ' . g:qfixmemo_prescript
+endif
+
+let calendar_action = "QFixHowmCalendarDiary"
+let calendar_sign   = "QFixHowmCalendarSign"
+
+nnoremap g,d :Calendar<CR>
+nnoremap g,y <ESC>:let @a = MMLinkMacro()<CR>
+nnoremap g,> $"ap
+nnoremap <C-h> 0f}:<C-U>call QFixMemoUserModeCR()<CR>
+inoremap <C-]> { }
