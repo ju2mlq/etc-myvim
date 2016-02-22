@@ -20,6 +20,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 't9md/vim-quickhl'
+NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'majutsushi/tagbar'
 " NeoBundle 'thinca/vim-ref'
@@ -44,6 +45,9 @@ call neobundle#end()
 
 let g:neocomplete#enable_at_startup = 1
 let g:vimfiler_as_default_explorer=1
+
+" quickrun configuration
+let g:quickrun_config={'*': {'split': ''}}
 
 " Required:
 filetype plugin indent on
