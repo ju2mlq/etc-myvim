@@ -14,16 +14,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" NeoBundle 'Shougo/neocomplete.vim'
-" NeoBundle 'Shougo/neosnippet.vim'
-" NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 't9md/vim-quickhl'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'majutsushi/tagbar'
-" NeoBundle 'thinca/vim-ref'
 
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'mtscout6/vim-cjsx'
